@@ -70,10 +70,10 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
                 if (((CheckBox) v).isChecked() && imageModelArrayList.get(pos).getSelected()) {
                     selected_position = position;
-                    imageModelArrayList.get(pos).setSelected(true);
+                    imageModelArrayList.get(pos).setSelected(false);
                 } else {
                     selected_position = -1;
-                    imageModelArrayList.get(pos).setSelected(false);
+                    imageModelArrayList.get(pos).setSelected(true);
                 }
 
 
@@ -90,7 +90,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
                 if (((LinearLayout) view).isClickable() && imageModelArrayList.get(pos).getSelected()) {
                     selected_position = position;
-                    imageModelArrayList.get(pos).setSelected(true);
+                    imageModelArrayList.get(pos).setSelected(false);
                     holder.checkBox.setChecked(true);
                 } else {
                     selected_position = -1;
